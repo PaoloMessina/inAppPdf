@@ -12,18 +12,16 @@
 
 @end
 
-@synthesize data;
-
 @implementation InAppPdfViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"%@", data);
-    bool *showClose = [params objectForKey:@"showClose"];
-    NSString *title = [params objectForKey:@"title"];
-    NSString *url = [params objectForKey:@"url"];
-    NSString *barColor = [params objectForKey:@"barColor"];
+    NSLog(@"%@", self.data);
+    bool *showClose = [[self.data objectForKey:@"showClose"] boolValue];
+    NSString *title = [self.data objectForKey:@"title"];
+    NSString *url = [self.data objectForKey:@"url"];
+    NSString *barColor = [self.data objectForKey:@"barColor"];
 }
 
 - (void)didReceiveMemoryWarning {
