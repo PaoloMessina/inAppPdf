@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="it.almaviva.cordovaplugins.inapppdf" version="1.0.0">
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <name>InAppPdf reader</name>
+    <author>Paolo messina</author>
+    <description>InAppPdf reader, light solution to open pdf in application</description>
+    <license>Apache LGPL</license>
+    <keywords>pdf, open, inapppdf</keywords>
+
+    <js-module src="www/inappdf.js" name="inAppPdf">
+        <clobbers target="almaviva.inAppPdf" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="inAppPdf">
+                <param name="ios-package" value="inAppPdf"/>
+            </feature>
+        </config-file>
+        <framework src="AVFoundation.framework" />
+        <framework src="CoreMedia.framework" />
+        <framework src="QuartzCore.framework" />
+        <source-file src="ios/inAppPdf.m" />
+        <header-file src="ios/inAppPdf.h" />
+        <source-file src="ios/InAppPdfViewController.m" />
+        <header-file src="ios/InAppPdfViewController.h" />
+        <resource-file src="ios/Resources/inAppPdfView.xib" />
+    </platform>
+
+</plugin>
