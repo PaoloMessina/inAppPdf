@@ -12,7 +12,7 @@ public class InAppPdf extends CordovaPlugin {
 	/**
      * Constructor.
      */
-    public inAppPdf() {
+    public InAppPdf() {
     }
 
     /**
