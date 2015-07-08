@@ -23,8 +23,7 @@ inAppPdf.prototype = {
         if(params.barColor == undefined) params.barColor = "#FFFFFF";
 
         exec(success, failure, 'InAppPdf', 'show', [params]);
-    },
-
+    }
 };
 
-module.exports = new inAppPdf;
+module.exports = new inAppPdf();

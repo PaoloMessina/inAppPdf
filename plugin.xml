@@ -13,7 +13,7 @@
     <keywords>pdf, open, inapppdf</keywords>
 
     <js-module src="www/inappdf.js" name="inAppPdf">
-        <runs/>
+        <clobbers target="inAppPdf" />
     </js-module>
 
     <platform name="ios">
