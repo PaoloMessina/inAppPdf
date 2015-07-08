@@ -19,12 +19,12 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="inAppPdf" >
-                <param name="android-package" value="inAppPdf"/>
+            <feature name="InAppPdf" >
+                <param name="android-package" value="InAppPdf"/>
             </feature>
         </config-file>
 
-        <source-file src="android/InAppPdf.java" target-dir="it/almaviva/cordovaplugins" />
+        <source-file src="android/InAppPdf.java" target-dir="src/it/almaviva/cordovaplugins" />
     </platform>
 
     <platform name="ios">
