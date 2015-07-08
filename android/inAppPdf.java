@@ -1,4 +1,4 @@
-package it.almaviva.cordovaplugins.inapppdf;
+package it.almaviva.cordovaplugins;
 
 import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CallbackContext;
@@ -36,8 +36,8 @@ public class inAppPdf extends CordovaPlugin {
      */
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("show")) {
-            Toast toast = Toast.makeText(this.cordova.getActivity().getApplicationContext();, "ciao", Toast.LENGTH_SHORT);
-			toast.show();
+            //Toast toast = Toast.makeText(this.cordova.getActivity().getApplicationContext();, "ciao", Toast.LENGTH_SHORT);
+			//toast.show();
             callbackContext.success(r);
         }
         else {
