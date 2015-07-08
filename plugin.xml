@@ -19,8 +19,8 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="InAppPdf" >
-                <param name="android-package" value="InAppPdf"/>
+            <feature name="inAppPdf" >
+                <param name="android-package" value="inAppPdf"/>
             </feature>
         </config-file>
 
