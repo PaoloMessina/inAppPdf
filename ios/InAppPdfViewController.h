@@ -6,8 +6,9 @@
 //
 //
 
-@interface InAppPdfViewController : UIViewController
+@interface InAppPdfViewController : UIViewController <UIWebViewDelegate>
 
+@property (nonatomic, weak) IBOutlet UIView *container;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 @property (nonatomic, weak) IBOutlet UIButton *closeButton;
 @property (nonatomic, weak) IBOutlet UIButton *backButton;
@@ -15,5 +16,7 @@
 @property (nonatomic, weak) IBOutlet UIWebView *viewWeb;
 
 @property (nonatomic, retain) NSDictionary *data;
+
+-(IBAction) close:(id)sender;
 
 @end

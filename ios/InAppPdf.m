@@ -27,7 +27,7 @@
 
 - (void)show: (CDVInvokedUrlCommand*)command;
 {
-    InAppPdfViewController *showCtrl = [InAppPdfViewController new];
+    InAppPdfViewController *showCtrl = [[InAppPdfViewController alloc] initWithNibName:@"inAppPdfView" bundle:nil];
     self.command = command;
     
     // Get user parameters

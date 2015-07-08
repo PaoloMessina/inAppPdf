@@ -30,6 +30,9 @@
         <source-file src="ios/InAppPdfViewController.m" />
         <header-file src="ios/InAppPdfViewController.h" />
         <resource-file src="ios/Resources/inAppPdfView.xib" />
+        <resource-file src="ios/Resources/back.png" />
+        <resource-file src="ios/Resources/back@2x.png" />
+        <resource-file src="ios/Resources/back@3x.png" />
     </platform>
 
 </plugin>
