@@ -36,6 +36,7 @@ public class InAppPdf extends CordovaPlugin {
      */
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("show")) {
+        	JSONObject r = new JSONObject();
             //Toast toast = Toast.makeText(this.cordova.getActivity().getApplicationContext();, "ciao", Toast.LENGTH_SHORT);
 			//toast.show();
             callbackContext.success(r);
