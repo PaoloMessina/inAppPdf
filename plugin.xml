@@ -18,8 +18,8 @@
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="inAppPdf">
-                <param name="ios-package" value="inAppPdf"/>
+            <feature name="InAppPdf">
+                <param name="ios-package" value="InAppPdf"/>
             </feature>
         </config-file>
         <framework src="AVFoundation.framework" />
