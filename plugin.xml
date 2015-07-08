@@ -15,6 +15,17 @@
     <js-module src="www/inappdf.js" name="inAppPdf">
         <clobbers target="inAppPdf" />
     </js-module>
+    
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="InAppPdf" >
+                <param name="android-package" value="InAppPdf"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/InAppPdf.java" target-dir="src/it/almaviva/cordovaplugins" />
+    </platform>
 
     <platform name="ios">
         <config-file target="config.xml" parent="/*">

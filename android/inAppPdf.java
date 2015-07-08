@@ -8,7 +8,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class inAppPdf extends CordovaPlugin {
+public class InAppPdf extends CordovaPlugin {
 	/**
      * Constructor.
      */
