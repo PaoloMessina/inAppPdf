@@ -24,7 +24,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/InAppPdf.java" target-dir="src/it/almaviva/cordovaplugins" />
+        <source-file src="android/InAppPdf.java" target-dir="it/almaviva/cordovaplugins" />
     </platform>
 
     <platform name="ios">
