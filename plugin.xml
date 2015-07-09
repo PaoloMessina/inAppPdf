@@ -20,7 +20,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="InAppPdf" >
-                <param name="android-package" value="InAppPdf"/>
+                <param name="android-package" value="it.almaviva.cordovaplugins.InAppPdf"/>
             </feature>
         </config-file>
 
